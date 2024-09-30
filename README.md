@@ -1,7 +1,3 @@
-## Chunking
-
-When working with large datasets or documents, finding relevant information quickly is key. Chunk strategies are pivotal in breaking down these larger entities into smaller, digestible parts, ensuring that searches are fast and accurate. Let’s dive into some common chunk strategies and how they are applied in advanced retrieval setups.
-
 ## Chunk Strategies for Efficient Information Retrieval
 
 When dealing with large datasets or documents, quickly locating relevant information is crucial. Chunk strategies are essential for breaking down these entities into smaller, manageable units for efficient and accurate searches. Here, we'll explore various chunking strategies, including By Title, Parent Document, and Parent Page Retrieval, to help you select the best approach for your specific needs.
