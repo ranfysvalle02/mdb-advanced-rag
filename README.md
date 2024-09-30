@@ -2,15 +2,6 @@
 
 When dealing with large datasets or documents, quickly locating relevant information is crucial. Chunk strategies are essential for breaking down these entities into smaller, manageable units for efficient and accurate searches. Here, we'll explore various chunking strategies, including By Title, Parent Document, and Parent Page Retrieval, to help you select the best approach for your specific needs.
 
-**By Title Chunking:**
-
-* **How it works:** Leverages the document's inherent structure, identified during partitioning, to create chunks based on sections denoted by headings or titles.
-* **Benefits:**
-    * Enhanced retrieval precision
-    * Improved search experience
-    * Leveraging existing structure
-* **Best suited for:** Highly structured documents with clear and consistent heading structures.
-
 **Parent Document Retrieval:**
 
 * **How it works:** Retrieves the entire document when information is likely to be dispersed across multiple sections.
@@ -27,18 +18,27 @@ When dealing with large datasets or documents, quickly locating relevant informa
     * Useful for structured documents like PDFs
 * **Best suited for:** Large documents with clear page divisions and when the relevant information is known to be contained within specific pages.
 
+**By Title Chunking:**
+
+* **How it works:** Leverages the document's inherent structure, identified during partitioning, to create chunks based on sections denoted by headings or titles.
+* **Benefits:**
+    * Enhanced retrieval precision
+    * Improved search experience
+    * Leveraging existing structure
+* **Best suited for:** Highly structured documents with clear and consistent heading structures.
+
 ### Choosing the Right Chunk Strategy
 
 Selecting the optimal chunking strategy depends on factors such as the complexity of the document, the structure of your data, and the nature of the query. For instance, document-heavy queries may benefit from parent document retrieval, while more specific or granular searches might leverage paragraph or page-based strategies. With MongoDB Atlas, these chunking techniques can be tailored for the desired performance and efficiency, ensuring fast, scalable, and relevant data retrieval.
 
-### 1. By Title Chunking
-- **Challenge**: Parsing through paragraphs for relevant content can be tedious and error-prone.
-
-### 2. Parent Document Retrieval
+### Parent Document Retrieval
 - **Challenge**: Retrieving large documents in their entirety can be inefficient and slow.
 
-### 3. Parent Page Retrieval
+### Parent Page Retrieval
 - **Challenge**: Finding the correct page within large PDFs or multi-page documents can be time-consuming.
+
+### By Title Chunking
+- **Challenge**: Parsing through paragraphs for relevant content can be tedious and error-prone.
 
 **Choosing the Right Chunking Strategy:**
 
